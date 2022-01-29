@@ -8,14 +8,20 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html {
+  font-size: 16px;
+  font-family: 'Avenir Next', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 body {
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5;*/
+  background-color: white  ;
   color: #4e4e4e;
 }
 
 mark {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 h1,
@@ -24,8 +30,16 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1e1e1e;
+  color: black;
+  font-family: "Avenir Next";
 }
+
+p { 
+  font-family: "Avenir Next";
+  font-size: 18px;
+  color: black;
+  font-weight: 549;
+ }
 
 a {
   color: #1e1e1e;
@@ -676,7 +690,7 @@ a:hover {
   position: absolute;
 }
 .hero .overlay-itro {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255,255,255, 0.3);
   position: absolute;
   top: 0;
   left: 0px;
@@ -686,7 +700,7 @@ a:hover {
   opacity: 0.9;
 }
 .hero .hero-title {
-  color: #fff;
+  color: black;
   font-weight: 600;
   font-size: 3rem;
 }
@@ -696,8 +710,9 @@ a:hover {
   }
 }
 .hero .hero-subtitle {
+  font-family: "Avenir Next";
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 300;
 }
 @media (min-width: 768px) {
   .hero .hero-subtitle {
