@@ -25,6 +25,9 @@ mark {
   color: white;
 }
 
+img {
+  border: 2px solid #42542d;
+}
 h1,
 h2,
 h3,
