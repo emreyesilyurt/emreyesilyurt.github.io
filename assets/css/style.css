@@ -28,13 +28,14 @@ mark {
 /*img {
   border: 2px solid #42542d;
 }*/
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: black;
+  color: #275e8e;
   font-family: "Avenir Next";
 }
 
@@ -46,25 +47,25 @@ p {
  }
 
 a {
-  color: #1e1e1e;
+  color: #00416a;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 a:hover {
-  color: #275e8e;
+  color: #007aa5;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 .fa-github{
-  color: black;
+  color: #00416a;
   font-size: 38px;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 .fa-github:hover {
-  color: #275e8e;
+  color: #007aa5;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
   font-size: 38.1px;
@@ -72,42 +73,42 @@ a:hover {
 
 
 .fa-twitter{
-  color: black;
+  color: #00416a;
   font-size: 38px;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 .fa-twitter:hover {
-  color: #275e8e;
+  color: #007aa5;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
   font-size: 38.1px;
 }
 
 .fa-linkedin{
-  color: black;
+  color: #00416a;
   font-size: 38px;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 .fa-linkedin:hover {
-  color: #275e8e;
+  color: #007aa5;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
   font-size: 38.1px;
 }
 
 .fa-medium{
-  color: black;
+  color: #00416a;
   font-size: 38px;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 .fa-medium:hover {
-  color: #275e8e;
+  color: #007aa5;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
   font-size: 38.1px;
@@ -115,14 +116,14 @@ a:hover {
 }
 
 .fa-envelope{
-  color: black;
+  color: #00416a;
   font-size: 38px;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 .fa-envelope:hover {
-  color: #275e8e;
+  color: #007aa5;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
   font-size: 38.1px;
