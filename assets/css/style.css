@@ -1,23 +1,17 @@
-/**
-* Template Name: DevFolio - v4.7.1
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 html {
   font-size: 12px;
-  font-family: 'Avenir Next', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Avenir Next', 'HelveticaNeue-Light', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 body {
   /* background-color: #f5f5f5;*/
   /*background-color: #FFFFFF  ;*/
-  background-color: #dff7fa;
-  color: #4e4e4e;
+  /*background-color: #dff7fa;*/
+  background-color: #FFFFFF;
+  /*color: #4e4e4e;*/
+  color: #262223;
+
 }
 
 mark {
@@ -25,9 +19,10 @@ mark {
   color: white;
 }
 
-/*img {
-  border: 2px solid #42542d;
-}*/
+img {
+  /*border: 2px solid #42542d;*/
+  width: 220px;
+}
 
 h1,
 h2,
@@ -35,37 +30,37 @@ h3,
 h4,
 h5,
 h6 {
-  color: #275e8e;
+  color: #262223;
   font-family: "Avenir Next";
 }
 
 p { 
   font-family: "Avenir Next";
   font-size: 18px;
-  color: black;
+  color: #262223;
   font-weight: 400;
  }
 
 a {
-  color: #00416a;
+  color: #262223;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 a:hover {
-  color: #007aa5;
+  color: #880808;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 .fa-github{
-  color: #00416a;
+  color: #262223;
   font-size: 38px;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 .fa-github:hover {
-  color: #007aa5;
+  color: #880808;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
   font-size: 38.1px;
@@ -73,42 +68,42 @@ a:hover {
 
 
 .fa-twitter{
-  color: #00416a;
+  color: #262223;
   font-size: 38px;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 .fa-twitter:hover {
-  color: #007aa5;
+  color: #880808;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
   font-size: 38.1px;
 }
 
 .fa-linkedin{
-  color: #00416a;
+  color: #262223;
   font-size: 38px;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 .fa-linkedin:hover {
-  color: #007aa5;
+  color: #880808;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
   font-size: 38.1px;
 }
 
 .fa-medium{
-  color: #00416a;
+  color: #262223;
   font-size: 38px;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 .fa-medium:hover {
-  color: #007aa5;
+  color: #880808;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
   font-size: 38.1px;
@@ -116,14 +111,14 @@ a:hover {
 }
 
 .fa-envelope{
-  color: #00416a;
+  color: #262223;
   font-size: 38px;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 .fa-envelope:hover {
-  color: #007aa5;
+  color: #880808;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
   font-size: 38.1px;
@@ -1393,7 +1388,7 @@ footer {
   text-align: center;
   color: #fff;
   padding: 25px 0;
-  background: #0062d3;
+  background: #FFFFFF;
 }
 footer .copyright {
   margin-bottom: 0.3rem;
