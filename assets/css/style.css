@@ -21,7 +21,7 @@ mark {
 
 img {
   /*border: 2px solid #42542d;*/
-  width: 220px;
+  width: 160px;
 }
 
 h1,
@@ -46,6 +46,7 @@ a {
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
+
 a:hover {
   color: #880808;
   text-decoration: none;
@@ -124,16 +125,6 @@ a:hover {
   font-size: 38.1px;
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 .p-r {
