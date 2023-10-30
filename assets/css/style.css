@@ -41,17 +41,25 @@ p {
   font-weight: 400;
  }
 
+
 a {
+  font-family: "Avenir Next";
+  font-size: 18px;
   color: #262223;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
 a:hover {
+  font-family: "Avenir Next";
+  font-size: 18px;
   color: #880808;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
+
+
+
 
 .fa-github{
   color: #262223;
