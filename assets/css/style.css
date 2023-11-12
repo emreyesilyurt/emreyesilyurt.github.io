@@ -120,6 +120,21 @@ a:hover {
 
 }
 
+.fa-telegram{
+  color: #262223;
+  font-size: 38px;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.fa-telegram:hover {
+  color: #880808;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 38.1px;
+
+}
+
 .fa-envelope{
   color: #262223;
   font-size: 38px;
