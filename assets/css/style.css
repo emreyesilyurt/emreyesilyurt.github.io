@@ -568,6 +568,51 @@ a:hover {
   padding: 12px 0;
 }
 
+header {
+  margin-bottom: 0rem;
+  background-color: #f2f1ee;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.nav-item a {
+margin: 0 1px;
+font-family: "Avenir Next";
+font-size: 15px;
+color: #343a40;
+text-decoration: none;
+font-weight: normal;
+}
+.nav-item a:hover {
+font-family: "Avenir Next";
+font-size: 15px;
+color: #880808;
+text-decoration: none;
+transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
