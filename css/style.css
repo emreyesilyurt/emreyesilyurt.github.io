@@ -208,7 +208,7 @@ Header intro
 }
 
 .headline-subtitle {
-    font-size: 24px
+    font-size: 15px
 }
 
 
@@ -352,7 +352,8 @@ Header intro
 /* Footer */
 
 .footer {
-    margin-top: 115px;
+    /* margin-top: 115px;*/
+    margin-top: 50px;
 }
 
 .footer .footer-title {
