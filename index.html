@@ -5,19 +5,133 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="sharebootstrap.com" />
-    <meta name="description" content="free bootstrap template by sharebootstrap.com">
-    <link rel="canonical" href="https://sharebootstrap.com" />
+    <meta name="author" content="Emre Yesilyurt" />
+    <meta name="description" content="Emre Yesilyurt - AI & Data Specialist, Scalable System Builder, Intelligence Transformer">
+    <link rel="canonical" href="https://emreyesilyurt.me" />
     <title>Emre Yesilyurt</title>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Fontaweome icons replacment -->
     <link rel="stylesheet"
         href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Theme styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <!-- Your Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
+    <style>
+        .social-icons a {
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 22px;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        /* Timeline styling */
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 11px;
+            height: 100%;
+            width: 2px;
+            background: var(--primary-color);
+            opacity: 0.3;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: -40px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .timeline-marker i {
+            color: white;
+            font-size: 12px;
+        }
+
+        .timeline-content h4 {
+            margin-bottom: 5px;
+        }
+
+        .timeline-content .text-muted {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        /* Expertise cards */
+        .expertise-card {
+            padding: 25px 20px;
+            height: 100%;
+            border-radius: 8px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .expertise-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .expertise-card i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .expertise-card h4 {
+            margin-bottom: 15px;
+        }
+
+        /* Skill tags */
+        .skill-group h5 {
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            padding: 5px 12px;
+            background-color: #f8f9fa;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+
+        .skill-tag:hover {
+            background-color: #e9ecef;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,40 +141,48 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-3" id="mainNav">
-        <div class="container"> <a class="navbar-brand js-scroll-trigger" href="index.html">Emre Yesilyurt</a>
+        <div class="container"> <a class="navbar-brand js-scroll-trigger" href="#top">Emre Yesilyurt</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="index.html">Home</a> </li>
-                    <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="project.html">Work</a> </li>
-                    <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="studio.html">Studio</a> </li>
+                    <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#top">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#work">Work</a> </li>
+                    <li class="nav-item"> <a class="nav-link js-scroll-trigger" href="#studio">Studio</a> </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header>
-        <div class="container">
-            <div class="row d-flex align-content-center">
-                <div class="col-md-7">
-                    <div class="headline">
-                        <div class="headline-content">
-                            
-                            <h1 class="headline-title display-3">AI & Data Specialist  Scalable System Bldr.  Intelligence Xfrmr.</h1>
-                            
-                            <p class="headline-subtitle">
-                                Developing Generative AI solutions for intelligent decision-making, and engineering cloud-based data pipelines. Focus on ensuring data integrity, scalability, and accessibility while optimizing AI-driven workflows for efficiency.
-                            </p>
-                            <a href="https://calendly.com/emre-yesilyurt/30min" target="_blank">→ Book a call</a>
+    <!-- Home Section -->
+    <section id="top">
+        <header>
+            <div class="container">
+                <div class="row d-flex align-content-center">
+                    <div class="col-md-7">
+                        <div class="headline">
+                            <div class="headline-content">
+                                
+                                <h1 class="headline-title display-3">AI & Data Specialist  Scalable System Bldr.  Intelligence Xfrmr.</h1>
+                                
+                                <p class="headline-subtitle">
+                                    Developing Generative AI solutions for intelligent decision-making, and engineering cloud-based data pipelines. Focus on ensuring data integrity, scalability, and accessibility while optimizing AI-driven workflows for efficiency.
+                                </p>
+                                <a href="https://calendly.com/emre-yesilyurt/30min" target="_blank">→ Book a call</a>
+                                <div class="social-icons mt-3">
+                                    <a href="mailto:emre@yesilyurt.dev" title="Email"><i class="fas fa-envelope"></i></a>
+                                    <a href="https://www.linkedin.com/in/yesilyurtemre/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://github.com/emreyesilyurt" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                                    <a href="https://medium.com/@emreyesilyurt" target="_blank" title="Medium"><i class="fab fa-medium"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- end: Header -->
-
-
+        </header>
+    </section>
+    <!-- end: Home Section -->
+    <br><br><br>
     <!-- footer -->
     <footer class="footer pb-5">
         <div class="container">
@@ -68,22 +190,70 @@
                 <div class="col-md-3">
                     <!--<div class="copy"> &copy; 2025 emreyesilyurt.me </div>-->
                 </div>
-
-                <div class="col-md-9 d-flex justify-content-md-end justify-content-center text-md-left text-center">
-
-                    <h7 class="footer-title"><strong>Don't forget! Better data is better than better
-                            models.</strong><br>
-                        Follow me on <a href="https://github.com/emreyesilyurt" target="_blank">GitHub</a>,
+                <div class="col-md-9">
+                    <h5 class="footer-title">Don't forget! Better data is better than better models.</h5>
+                    <div class="row mt-5">
+                        <div class="col-md-4">
+                            <h5>Get in touch</h5>
+                            <ul class="list-unstyled p-0">
+                                <li class="#"><a href="mailto:emre@yesilyurt.dev" target="_blank" data-bypass="">Email me at emre@yesilyurt.dev</a>
+                                    <br> 
+                                </li>
+                                <li class="#"><a href="https://www.linkedin.com/messaging/compose/?recipient=yesilyurtemre" target="_blank" data-bypass="">Message me on Linkedin</a></li>
+                            </ul>
+                        </div>
                         
-                        <a href="https://www.linkedin.com/in/yesilyurtemre/" target="_blank">Linkedin</a> or
-                        read my thoughts on <a href="https://medium.com/@emreyesilyurt" target="_blank">Medium</a>.
-                       
-                        <br>
-
-                        Got questions? Drop me a line at <a href="mailto:emre@yesilyurt.dev">emre@yesilyurt.dev</a>.
-                    </h7>
+                        <div class="col-md-4">
+                            <h5>Check my pinned github repos</h5>
+                            <ul class="list-unstyled p-0">
+                                <li class="#"> <a href="https://github.com/emreyesilyurt/overviewer" target="_blank">overviewer</a></li>
+                                <li class="#"><a href="https://github.com/emreyesilyurt/predictability" target="_blank">predictability</a>
+                                <li class="#"><a href="https://github.com/emreyesilyurt/data-ninja" target="_blank">data-ninja</a>
+                                <li class="#"><a href="https://github.com/emreyesilyurt/BOMnet" target="_blank">BOMnet</a>
+                                <li class="#"><a href="https://github.com/emreyesilyurt/deepsheet" target="_blank">deepsheet</a>
+                                <li class="#"><a href="https://github.com/emreyesilyurt/ChipWhisperer" target="_blank">ChipWhisperer</a>
+                                    <br> </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>Check my latest blog posts</h5>
+                            <ul class="list-unstyled p-0" id="medium-posts">
+                                <li>Loading posts...</li>
+                            </ul>
+                        </div>
+                        
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                                const rssFeedUrl = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@emreyesilyurt";
+                        
+                                fetch(rssFeedUrl)
+                                    .then(response => response.json())
+                                    .then(data => {
+                                        const posts = data.items.slice(0, 6); 
+                                        let postsHtml = "";
+                                        
+                                        posts.forEach(post => {
+                                            let title = post.title;
+                                            const maxLength = 40;
+                        
+                                            if (title.length > maxLength) {
+                                                title = title.substring(0, maxLength) + "...";
+                                            }
+                        
+                                            postsHtml += `<li><a href="${post.link}" target="_blank">${title}</a></li>`;
+                                        });
+                        
+                                        document.getElementById("medium-posts").innerHTML = postsHtml;
+                                    })
+                                    .catch(error => {
+                                        console.error("Error fetching Medium posts:", error);
+                                        document.getElementById("medium-posts").innerHTML = "<li>Failed to load posts.</li>";
+                                    });
+                            });
+                        </script>
+                        
+                    </div>
                 </div>
-
             </div>
         </div>
     </footer>
@@ -97,6 +267,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
     <!-- Custom JavaScript for this theme -->
     <script src="js/custom.js"></script>
+    
+    <!-- Smooth scrolling script -->
+    <script>
+        $(document).ready(function(){
+            // Add smooth scrolling to all js-scroll-trigger links
+            $(".js-scroll-trigger").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                    
+                    // Store hash
+                    var hash = this.hash;
+                    
+                    // Using jQuery's animate() method to add smooth page scroll
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 70 // Offset for fixed header
+                    }, 800, function(){
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
