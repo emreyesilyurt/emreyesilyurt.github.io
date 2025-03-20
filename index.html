@@ -131,6 +131,68 @@
         .skill-tag:hover {
             background-color: #e9ecef;
         }
+        
+        /* Fixed typewriter container style to prevent line breaks */
+        .typewriter-container {
+          display: inline-block;
+          position: relative;
+          line-height: 1.3;
+          margin-bottom: 10px;
+          padding: 0;
+          white-space: nowrap; /* Prevent wrapping */
+          overflow: visible; /* Allow content to be visible */
+        }
+        
+        /* Text wrapper with fixed display properties */
+        .typewriter-wrapper {
+          display: inline-block;
+          background-color: #ffbf43; /* Red background highlight */
+          padding: 5px 10px;
+          position: relative;
+          color: black; /* White text */
+          font-weight: 900; /* Extra bold */
+          font-size: 5.5rem; /* Large font size */
+          line-height: 1.2;
+          white-space: nowrap; /* Prevent wrapping */
+          min-width: 10px; /* Minimum width to start with */
+        }
+        
+        /* Blinking cursor */
+        .typewriter-cursor {
+          display: inline-block;
+          width: 3px;
+          height: 3.5rem;
+          background-color: white;
+          position: relative;
+          margin-left: 4px;
+          vertical-align: middle;
+          animation: blink 0.7s infinite;
+        }
+        
+        @keyframes blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0; }
+        }
+        
+        /* Animation for fade out */
+        @keyframes fadeOut {
+          from { opacity: 1; }
+          to { opacity: 0; }
+        }
+        
+        .fade-out {
+          animation: fadeOut 0.5s forwards;
+        }
+        
+        /* Adjust headline title styling */
+        .headline-title {
+          display: block;
+          line-height: 1.2;
+          margin-bottom: 30px;
+          padding: 0;
+          white-space: nowrap; /* Prevent wrapping */
+          overflow: visible; /* Allow content to be visible */
+        }
     </style>
 </head>
 
@@ -162,7 +224,7 @@
                         <div class="headline">
                             <div class="headline-content">
                                 
-                                <h1 class="headline-title display-3">AI & Data Specialist  Scalable System Bldr.  Intelligence Xfrmr.</h1>
+                                <h1 class="headline-title display-3"></h1>
                                 
                                 <p class="headline-subtitle">
                                     Developing Generative AI solutions for intelligent decision-making, and engineering cloud-based data pipelines. Focus on ensuring data integrity, scalability, and accessibility while optimizing AI-driven workflows for efficiency.
@@ -182,7 +244,7 @@
         </header>
     </section>
     <!-- end: Home Section -->
-    <br><br><br>
+     <br><br><br><br>
     <!-- footer -->
     <footer class="footer pb-5">
         <div class="container">
@@ -290,6 +352,76 @@
                     });
                 }
             });
+        });
+    </script>
+    
+    <!-- Improved typewriter animation script with fixed single line -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const headlineElement = document.querySelector('.headline-title');
+          
+          // Store the text content
+          const textLines = [
+            "AI & Data Specialist",
+            "Scalable System Bldr.",
+            "Intelligence Xfrmr."
+          ];
+          
+          headlineElement.innerHTML = '<div class="typewriter-container" id="typewriter-container"></div>';
+          const container = document.getElementById('typewriter-container');
+          
+          // Function to create typewriter animation with synchronized highlight
+          async function typeWriter(text, speed = 70) {
+            // Clear previous content
+            container.innerHTML = '';
+            
+            const wrapper = document.createElement('div');
+            wrapper.className = 'typewriter-wrapper';
+            wrapper.style.minWidth = '10px'; // start width
+            wrapper.textContent = '.'; // start text
+            container.appendChild(wrapper);
+            
+            // Add cursor
+            const cursor = document.createElement('span');
+            cursor.className = 'typewriter-cursor';
+            container.appendChild(cursor);
+            
+            // Type each character with a delay
+            let displayedText = '';
+            
+            for (let i = 0; i < text.length; i++) {
+              await new Promise(resolve => setTimeout(resolve, speed));
+              
+              // Add the next character
+              displayedText += text[i];
+              wrapper.textContent = displayedText;
+              
+              // Let the width adjust naturally to the content
+              // This ensures the background highlight stays with the text
+            }
+            
+            // Remove cursor after typing is complete
+            cursor.style.display = 'none';
+            
+            // Pause before switching to the next line
+            await new Promise(resolve => setTimeout(resolve, 1500));
+            
+            // Fade out effect
+            wrapper.classList.add('fade-out');
+            await new Promise(resolve => setTimeout(resolve, 500));
+          }
+          
+          // Run the typewriter animation continuously
+          async function runTypewriter() {
+            while (true) {
+              for (let i = 0; i < textLines.length; i++) {
+                await typeWriter(textLines[i]);
+              }
+            }
+          }
+          
+          // Start the animation
+          runTypewriter();
         });
     </script>
 </body>

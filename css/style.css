@@ -10,7 +10,7 @@ Change your color here
 ////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 :root {
-    --primary-color: #FF0000;
+    --primary-color: #ffbf43;
     --secondary-color: #f8cf46;
 }
 
@@ -195,7 +195,7 @@ Header intro
 .headline {
     position: relative;
     margin-bottom: 100px;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 .headline-content {
