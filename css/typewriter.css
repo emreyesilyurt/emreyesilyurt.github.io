@@ -19,7 +19,7 @@
   /* Text wrapper with fixed display properties */
   .typewriter-wrapper {
     display: inline-block;
-    background-color: #ffbf43; /* Yellow background highlight */
+    background-color: #FFFFFF; /* Yellow background highlight */
     padding: 5px 10px;
     position: relative;
     color: black; /* Black text */
