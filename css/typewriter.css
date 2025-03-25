@@ -1,6 +1,6 @@
 /**
  * Typewriter Animation Styles
- * 
+ *
  * These styles create the typewriter animation effect with a colored background
  * that grows with the text. Used in conjunction with typewriter.js.
  */
@@ -12,67 +12,51 @@
     line-height: 1.3;
     margin-bottom: 10px;
     padding: 0;
-    white-space: nowrap; /* Prevent wrapping */
-    overflow: visible; /* Allow content to be visible */
-  }
-  
-  /* Text wrapper with fixed display properties */
-  .typewriter-wrapper {
-    display: inline-block;
-    background-color: #FFFFFF; /* Yellow background highlight */
-    padding: 5px 10px;
-    position: relative;
-    color: black; /* Black text */
-    font-weight: 900; /* Extra bold */
-    font-size: 5.5rem; /* Large font size */
-    line-height: 1.2;
-    white-space: nowrap; /* Prevent wrapping */
-    min-width: 10px; /* Minimum width to start with */
-  }
-  
-  /* Blinking cursor */
-  .typewriter-cursor {
-    display: none !important;
-    width: 3px;
-    height: 3.5rem;
-    background-color: white;
-    position: relative;
-    margin-left: 4px;
-    vertical-align: middle;
-    animation: blink 0.7s infinite;
-    
-  }
-  
-  @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-  }
-  
-  /* Animation for fade out */
-  @keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
-  }
-  
-  .fade-out {
-    animation: fadeOut 0.5s forwards;
-  }
-  
-  /* Adjust headline title styling */
-  .headline-title {
-    display: block;
-    line-height: 1.2;
-    margin-bottom: 30px;
-    padding: 0;
-    white-space: nowrap; /* Prevent wrapping */
-    overflow: visible; /* Allow content to be visible */
-  }
-
-  @keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
+    white-space: nowrap;
+    overflow: visible;
 }
 
-.fade-out {
-    animation: fadeOut 0.5s forwards;
+/* Text wrapper with fixed display properties */
+.typewriter-wrapper {
+    display: inline-block;
+    background-color: #FFFFFF;
+    padding: 5px 10px;
+    position: relative;
+    color: black;
+    font-weight: 900;
+    font-size: 5.5rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    min-width: 10px;
+}
+
+/* Blinking cursor */
+.typewriter-wrapper::after {
+    content: '|';
+    animation: blink-caret 0.75s step-end infinite;
+    position: absolute;
+    right: -10px;
+}
+
+/* Blink animation */
+@keyframes blink-caret {
+    from, to {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Responsive font sizes */
+@media (max-width: 768px) {
+    .typewriter-wrapper {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .typewriter-wrapper {
+        font-size: 1.8rem;
+    }
 }
