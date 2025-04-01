@@ -14,11 +14,30 @@
     <!-- Fontaweome icons replacment -->
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
     <!-- Theme styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <!-- Your Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
+    <!-- Add baguetteBox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css" />
+    <style>
+        /* Additional styles for photo hover effects */
+        .work-entry:hover .entry-image {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        
+        /* Make sure the gallery works well with baguetteBox */
+        .gallery-container {
+            padding: 0;
+        }
+        
+        /* Improved hover effect */
+        .work-entry-hover {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    </style>
 </head>
 
 <body>
@@ -51,28 +70,23 @@
                         </div>
                     </div>
                 </div>
-                <!--<div class="col-md-5">
-                    <p class="lead mt-3">A collection of visual narratives captured during my travels and explorations, documenting life, culture, and moments across Southeast Asia.</p>
-                </div>-->
             </div>
         </div>
     </header>
     
     <section class="space-md">
         <!-- portfolio -->
-        <div id="portfolio" class="container">
+        <div id="portfolio" class="container gallery-container">
             <div id="portfolio-filters">
                 <!--<ul id="filters" class="p-0">
                     <li><a href="*" class="active">All</a></li>
                 </ul>-->
             </div>
 
-            <div class="grid" data-cols="3" data-margin="30" data-height="1" data-masonry='{ "columnWidth": 200, "itemSelector": ".entry" }'>
+            <div class="grid gallery" data-cols="3" data-margin="30" data-height="1" data-masonry='{ "columnWidth": 200, "itemSelector": ".entry" }'>
                 <!-- entry -->
-
-                <!-- end:entry -->
                 <div class="entry work-entry w2">
-                    <a href="#">
+                    <a href="img/studio/DSC00863.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC00863.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -81,9 +95,10 @@
                         </div>
                     </a>
                 </div>
- <!-- end:entry -->
+                <!-- end:entry -->
+                
                 <div class="entry work-entry">
-                    <a href="#">
+                    <a href="img/studio/DSC08809.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC08809.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -95,7 +110,7 @@
                 <!-- end:entry -->
 
                 <div class="entry work-entry">
-                    <a href="#">
+                    <a href="img/studio/DSC00432.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC00432.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -105,8 +120,9 @@
                     </a>
                 </div>
                 <!-- end:entry -->
+                
                 <div class="entry work-entry">
-                    <a href="#">
+                    <a href="img/studio/DSC00475.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC00475.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -118,7 +134,7 @@
                 <!-- end:entry -->
 
                 <div class="entry work-entry">
-                    <a href="#">
+                    <a href="img/studio/DSC08794-3.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC08794-3.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -129,12 +145,8 @@
                 </div>
                 <!-- end:entry -->
 
-
-
-
-
                 <div class="entry work-entry">
-                    <a href="#">
+                    <a href="img/studio/DSC01454-Enhanced-NR.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC01454-Enhanced-NR.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -146,7 +158,7 @@
                 <!-- end:entry -->
 
                 <div class="entry work-entry campaign h2">
-                    <a href="#">
+                    <a href="img/studio/DSC00059.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC00059.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -157,9 +169,8 @@
                 </div>
                 <!-- end:entry -->
 
-
                 <div class="entry work-entry">
-                    <a href="#">
+                    <a href="img/studio/DSC05782.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC05782.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -170,10 +181,8 @@
                 </div>
                 <!-- end:entry -->
 
-
-
                 <div class="entry work-entry">
-                    <a href="#">
+                    <a href="img/studio/DSC00061.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC00061.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -184,21 +193,8 @@
                 </div>
                 <!-- end:entry -->
 
-
-
-<br><br>
-
-
-
-
-
-
-
-
-
-
                 <div class="entry work-entry campaign h2">
-                    <a href="#">
+                    <a href="img/studio/DSC03234.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC03234.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -209,9 +205,8 @@
                 </div>
                 <!-- end:entry -->
 
-
                 <div class="entry work-entry w2">
-                    <a href="#">
+                    <a href="img/studio/DSC01281.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC01281.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -223,7 +218,7 @@
                 <!-- end:entry -->
 
                 <div class="entry work-entry">
-                    <a href="#">
+                    <a href="img/studio/DSC04924-Enhanced-NR.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC04924-Enhanced-NR.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -235,7 +230,7 @@
                 <!-- end:entry -->
 
                 <div class="entry work-entry">
-                    <a href="#">
+                    <a href="img/studio/DSC08953.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC08953.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -246,27 +241,8 @@
                 </div>
                 <!-- end:entry -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <div class="entry work-entry">
-                    <a href="#">
+                    <a href="img/studio/DSC08897.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC08897.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -278,7 +254,7 @@
                 <!-- end:entry -->
 
                 <div class="entry work-entry">
-                    <a href="#">
+                    <a href="img/studio/DSC08962.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC08962.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -288,8 +264,9 @@
                     </a>
                 </div>
                 <!-- end:entry -->
+                
                 <div class="entry work-entry">
-                    <a href="#">
+                    <a href="img/studio/DSC01332.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC01332.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -299,8 +276,9 @@
                     </a>
                 </div>
                 <!-- end:entry -->
+                
                 <div class="entry work-entry">
-                    <a href="#">
+                    <a href="img/studio/DSC01440.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC01440.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -311,9 +289,8 @@
                 </div>
                 <!-- end:entry -->
 
-                <!-- Adding entries for the remaining photos -->
                 <div class="entry work-entry">
-                    <a href="#">
+                    <a href="img/studio/DSC00058.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC00058.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -324,9 +301,8 @@
                 </div>
                 <!-- end:entry -->
 
-
                 <div class="entry work-entry">
-                    <a href="#">
+                    <a href="img/studio/DSC00312.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC00312.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -335,10 +311,10 @@
                         </div>
                     </a>
                 </div>
-
                 <!-- end:entry -->
+                
                 <div class="entry work-entry">
-                    <a href="#">
+                    <a href="img/studio/DSC01266-Enhanced-NR.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC01266-Enhanced-NR.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -348,8 +324,9 @@
                     </a>
                 </div>
                 <!-- end:entry -->
+                
                 <div class="entry work-entry">
-                    <a href="#">
+                    <a href="img/studio/DSC01339.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC01339.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -359,8 +336,9 @@
                     </a>
                 </div>
                 <!-- end:entry -->
+                
                 <div class="entry work-entry">
-                    <a href="#">
+                    <a href="img/studio/DSC01340.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC01340.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -370,8 +348,9 @@
                     </a>
                 </div>
                 <!-- end:entry -->
+                
                 <div class="entry work-entry">
-                    <a href="#">
+                    <a href="img/studio/DSC03166.jpg" class="lightbox">
                         <div class="entry-image imageBG" data-img="img/studio/DSC03166.jpg"></div>
                         <div class="work-entry-hover">
                             <div class="work-entry-content">
@@ -381,12 +360,7 @@
                     </a>
                 </div>
                 <!-- end:entry -->
-
-
             </div>
-
-
-
         </div>
         <!-- /end:portfolio -->
     </section>
@@ -472,8 +446,26 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <!-- Add baguetteBox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
     <!-- Custom JavaScript for this theme -->
     <script src="js/custom.js"></script>
+    
+    <!-- Initialize the lightbox -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize baguetteBox
+            baguetteBox.run('.gallery', {
+                animation: 'slideIn',
+                overlayBackgroundColor: 'rgba(0,0,0,0.8)'
+            });
+            
+            // Re-initialize isotope after images load for proper layout
+            window.addEventListener('load', function() {
+                grid();
+            });
+        });
+    </script>
 </body>
 
 </html>
