@@ -454,11 +454,31 @@
     <!-- Initialize the lightbox -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Initialize baguetteBox
+            // Initialize baguetteBox with customized options
             baguetteBox.run('.gallery', {
-                animation: 'slideIn',
-                overlayBackgroundColor: 'rgba(0,0,0,0.8)'
+                animation: 'fadeIn',
+                overlayBackgroundColor: 'rgba(0,0,0,0.85)',
+                fullScreen: false,
+                buttons: true
             });
+            
+            // Custom styling for baguetteBox to make it smaller
+            var style = document.createElement('style');
+            style.textContent = `
+                #baguetteBox-overlay .full-image {
+                    max-height: 180vh !important;
+                    max-width: 180vw !important;
+                }
+                #baguetteBox-overlay .full-image img {
+                    max-height: 80vh !important;
+                    max-width: 80vw !important;
+                    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+                }
+                .baguetteBox-button {
+                    background-color: rgba(0,0,0,0.4) !important;
+                }
+            `;
+            document.head.appendChild(style);
             
             // Re-initialize isotope after images load for proper layout
             window.addEventListener('load', function() {
